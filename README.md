@@ -8,7 +8,7 @@ A simple contact manager app using [React.js](https://reactjs.org/), [Redux](htt
 
 ### Note
 
-If you're using chrome as browser, [install Redux DevRools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) and uncomment the code in ./src/store.js line 14
+If you're using chrome as browser, install [ Redux DevRools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) and uncomment the code in ./src/store.js line 14
 
 ### Installation
 
