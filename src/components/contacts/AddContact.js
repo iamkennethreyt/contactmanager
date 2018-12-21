@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import TextInputGroup from '../layout/TextInputGroup';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { addContact } from '../../actions/contactActions';
+import React, { Component } from "react";
+import TextInputGroup from "../layout/TextInputGroup";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { addContact } from "../../actions/contactActions";
 
 class AddContact extends Component {
   state = {
-    name: '',
-    email: '',
-    phone: '',
+    name: "",
+    email: "",
+    phone: "",
     errors: {}
   };
 
@@ -18,18 +18,18 @@ class AddContact extends Component {
     const { name, email, phone } = this.state;
 
     // Check For Errors
-    if (name === '') {
-      this.setState({ errors: { name: 'Name is required' } });
+    if (name === "") {
+      this.setState({ errors: { name: "Name is required" } });
       return;
     }
 
-    if (email === '') {
-      this.setState({ errors: { email: 'Email is required' } });
+    if (email === "") {
+      this.setState({ errors: { email: "Email is required" } });
       return;
     }
 
-    if (phone === '') {
-      this.setState({ errors: { phone: 'Phone is required' } });
+    if (phone === "") {
+      this.setState({ errors: { phone: "Phone is required" } });
       return;
     }
 
@@ -43,13 +43,13 @@ class AddContact extends Component {
 
     // Clear State
     this.setState({
-      name: '',
-      email: '',
-      phone: '',
+      name: "",
+      email: "",
+      phone: "",
       errors: {}
     });
 
-    this.props.history.push('/');
+    this.props.history.push("/");
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -58,7 +58,7 @@ class AddContact extends Component {
     const { name, email, phone, errors } = this.state;
 
     return (
-      <div className="card mb-3">
+      <div className="card mt-3">
         <div className="card-header">Add Contact</div>
         <div className="card-body">
           <form onSubmit={this.onSubmit}>
@@ -90,7 +90,7 @@ class AddContact extends Component {
             <input
               type="submit"
               value="Add Contact"
-              className="btn btn-light btn-block"
+              className="btn  deep-purple accent-4 btn-block"
             />
           </form>
         </div>

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 export default () => {
   return (
-    <div>
+    <div className="text-black-50">
       <h1 className="display-4">
         <span className="text-danger">404</span> Page Not Found
       </h1>
